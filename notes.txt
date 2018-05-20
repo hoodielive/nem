@@ -1,0 +1,35 @@
+What is NodeJS?
+
+Javascript runtime that uses the v8 Javascript engine 
+
+Allows us to run JS on the server (Like PHP, Rails, Java, etc) 
+
+Used to build very fast and scalable real-time applications 
+
+Uses an event driven, non-blocking i/o model 
+
+
+What can you do with it?
+
+Manipulate files on the FS
+
+Build web servers (respond to http requests) 
+
+Query dbs (Mongo, MySQL, Postgres, Redis, etc) 
+
+Powerful APIs & backend interfaces 
+
+Powerful server side apps with rendered views 
+
+
+Blocking Model vs Non-Blocking 
+
+Blocking (you are blocked into one thing is finished):
+	Upload the File
+	Display the File
+	Do Something Else
+
+Non-Blocking (asynchronous code - do this while) -> Event Loop (Node is an event driven system) 
+	Upload the file
+	When its done do something else
+	Do something else
