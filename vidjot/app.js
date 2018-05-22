@@ -20,13 +20,16 @@ app.use(function(req, res, next) {
 }); 
 
 // Index Route 
+const title = 'Welcome'
 app.get('/', (req, res) => {
-	res.render('index'); 
+	res.render('index',  { 
+		title: title
+	}); 
 }); 
 
 // About
 app.get('/about', (req, res) => {
-    res.send('ABOUT')
+    res.render('about'); 
 });
 
 const port = 5000;
