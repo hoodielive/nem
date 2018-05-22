@@ -21,8 +21,7 @@ app.use(function(req, res, next) {
 
 // Index Route 
 app.get('/', (req, res) => {
-		console.log(req.name); 
-    res.send('INDEX')
+	res.render('index'); 
 }); 
 
 // About
