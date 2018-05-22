@@ -8,13 +8,13 @@ app.use(function(req, res, next) {
 	console.log(Date.now()); 
 	req.name = 'Larry'; 
 	next(); 
-
 }); 
 
 // Index Route 
 app.get('/', (req, res) => {
+		console.log(req.name); 
     res.send('INDEX')
-})
+}); 
 
 // About
 app.get('/about', (req, res) => {
