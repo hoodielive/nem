@@ -14,9 +14,8 @@ const app = express();
 mongoose.Promise = global.Promise; 
 
 // Connect to mongoose 
-mongoose.connect('mongodb://localhost/vidjot-dev', {
-	useMongoClient: true
-}) 
+mongoose.connect('mongodb://localhost/vidjot-dev');
+
 
   .then(() => console.log('MongoDB connected...')) 
   .catch(err => console.log(err)); 
