@@ -56,10 +56,9 @@ app.get('/ideas', (req, res) => {
 		.sort({date: 'desc'})
 		.then(ideas => {
 			res.render('ideas/index', {
-				ideas: ideas
+				ideas:ideas
 			}); 
 		});
-	res.render('ideas/index'); 
 }); 
 
 // Add Idea form
