@@ -62,7 +62,6 @@ app.get('/ideas', (req, res) => {
 }); 
 
 // Add Idea form
-
 app.get('/ideas/add', (req, res) => {
     res.render('ideas/add'); 
 });
@@ -73,7 +72,6 @@ app.get('/ideas/edit/:id', (req, res) => {
 }); 
 
 // Process form
-
 app.post('/ideas', (req, res) => {
 	let errors = []; 
 
