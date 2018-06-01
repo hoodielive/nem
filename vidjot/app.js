@@ -67,11 +67,18 @@ app.get('/ideas/add', (req, res) => {
 });
 
 // Edit Idea Form 
-app.get('/ideas/edit', (req, res) => {
-	res.render('ideas/edit')
+app.get('/ideas/edit/:id', (req, res) => {
+	Idea.findOne({
+		_id: req.params.id
+	})
+	.then(idea => {
+		res.render('ideas/edit', {
+			idea:idea
+		});
+	});
 });
 
-// Process form
+// Add Process form
 app.post('/ideas', (req, res) => {
 	let errors = []; 
 
