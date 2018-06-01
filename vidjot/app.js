@@ -67,9 +67,9 @@ app.get('/ideas/add', (req, res) => {
 });
 
 // Edit Idea Form 
-app.get('/ideas/edit/:id', (req, res) => {
-	res.render('ideas/edit');
-}); 
+app.get('/ideas/edit', (req, res) => {
+	res.render('ideas/edit')
+});
 
 // Process form
 app.post('/ideas', (req, res) => {
